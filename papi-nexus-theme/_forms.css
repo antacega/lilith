@@ -1,0 +1,65 @@
+/* Formulário de Contato */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: var(--card-background);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: var(--secondary-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #3a3a3a; /* Campo mais escuro */
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-color-light);
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(3, 218, 198, 0.3); /* Brilho suave */
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    width: auto;
+    min-width: 180px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: var(--background-dark);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #02a89a;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,121 @@
+/* Grid de Serviços/Features */
+.services-grid, .grid-2-columns, .grid-3-columns, .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-item, .course-feature-item, .guide-item {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover, .course-feature-item:hover, .guide-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.service-item h3, .course-feature-item h3, .guide-item h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.service-item p, .course-feature-item p, .guide-item p {
+    font-size: 1em;
+    color: var(--text-color-light);
+    text-align: center;
+}
+
+/* Layout de 2 Colunas (para Portfólio) */
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+}
+
+.grid-2-columns.reverse-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-2-columns .text-content {
+    padding: 20px;
+}
+
+.grid-2-columns .text-content p {
+    text-align: left;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.grid-2-columns .text-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.grid-2-columns .text-content ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    color: var(--text-color-light);
+}
+
+.grid-2-columns .text-content ul li::before {
+    content: '🐉'; /* Ícone de dragão para Lilith */
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.grid-2-columns .image-placeholder {
+    text-align: center;
+}
+
+.grid-2-columns .image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Curso IA Módulos */
+.modules-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.module-item {
+    background-color: var(--card-background);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.module-item:hover {
+    transform: translateY(-3px);
+}
+
+.module-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.module-item p {
+    font-size: 0.95em;
+    color: var(--text-color-light);
+    text-align: left;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
