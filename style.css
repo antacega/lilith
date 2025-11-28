@@ -1,3 +1,15 @@
+/*
+Theme Name: Papi's Nexus
+Theme URI: https://example.com/papi-nexus
+Author: Papi
+Author URI: https://example.com
+Description: A custom WordPress theme for a personal brand portfolio, featuring modular CSS and Lilith integration.
+Version: 1.0
+License: Proprietary
+License URI: https://example.com/license
+Text Domain: papi-nexus
+*/
+
 @import url("_variables.css");
 @import url("_base.css");
 @import url("_header.css");

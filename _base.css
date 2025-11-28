@@ -1,3 +1,12 @@
+/**
+ * Base Styles and Reset.
+ *
+ * This file contains the CSS Reset to ensure browser consistency,
+ * sets global typography settings (font-family, line-height),
+ * defines basic body styles, global anchor tag behavior, and
+ * the main layout container utility class.
+ */
+
 /* Reset Básico e Tipografia Global */
 * {
     margin: 0;

@@ -1,10 +1,23 @@
-// Papi's Nexus - Interactivity Script
-// Lilith MadameHydra 🐉 is ready to imbue more life into this essence.
+/**
+ * Papi's Nexus - Interactivity Script
+ *
+ * This script handles the client-side behavior of the Papi's Nexus theme.
+ * It is responsible for smooth scrolling, mobile menu toggling, and
+ * basic form validation. It initializes when the DOM is fully loaded.
+ *
+ * @file script.js
+ * @author Papi / Lilith MadameHydra
+ */
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Papi's Nexus está vivo e aguardando comandos.");
 
-    // Smooth scrolling para âncoras
+    /**
+     * Smooth Scrolling Logic.
+     *
+     * Intercepts clicks on anchor links starting with '#'.
+     * Prevents default jump behavior and smoothly scrolls to the target element.
+     */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -15,7 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Lógica para o menu responsivo (mobile menu toggle)
+    /**
+     * Mobile Menu Toggle Logic.
+     *
+     * Toggles the 'active' class on the menu button and navigation menu
+     * when the toggle button is clicked. Also closes the menu when a link is clicked.
+     */
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
 
@@ -25,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             menuToggle.classList.toggle('active');
         });
 
-        // Fechar o menu ao clicar em um item do menu (opcional)
+        // Close menu when a link is clicked
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -34,12 +52,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Validação de formulários básica
+    /**
+     * Basic Form Validation Logic.
+     *
+     * Validates the contact form fields (name, email, message) on submit.
+     * Prevents submission if fields are empty and alerts the user.
+     * If valid, allows the form to submit.
+     */
     const contactForm = document.querySelector('.contact-form');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
-            e.preventDefault(); // Impedir o envio padrão do formulário
+            e.preventDefault(); // Prevent default form submission
 
             const nameInput = document.getElementById('name');
             const emailInput = document.getElementById('email');
@@ -63,11 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (isValid) {
-                // Se tudo estiver válido, você pode enviar o formulário aqui
-                // Por enquanto, apenas um log
+                // If everything is valid, submit the form
                 console.log('Formulário enviado com sucesso!');
                 alert('Mensagem enviada com sucesso!');
-                this.submit(); // Envia o formulário de verdade
+                this.submit(); // Actually submit the form
             }
         });
     }

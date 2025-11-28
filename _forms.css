@@ -1,3 +1,11 @@
+/**
+ * Form Styles.
+ *
+ * This file handles the styling for forms, specifically the contact form.
+ * It includes styles for form containers, input fields, textareas, and
+ * submit buttons, including focus states and transitions.
+ */
+
 /* Formulário de Contato */
 .contact-form {
     max-width: 600px;

@@ -1,3 +1,11 @@
+/**
+ * Hero Section Styles.
+ *
+ * This file contains styles specific to the Hero section (the large area at the top of pages).
+ * It includes layout properties for centering content, background image handling,
+ * and an overlay for better text readability.
+ */
+
 /* Hero Section (Home e outras) */
 .hero-section {
     display: flex;

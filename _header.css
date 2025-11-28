@@ -1,3 +1,11 @@
+/**
+ * Header and Navigation Styles.
+ *
+ * This file styles the site header, the logo, and the main navigation menu.
+ * It also includes styles for the mobile menu toggle button (hamburger icon)
+ * and its active states for the responsive mobile view.
+ */
+
 /* Cabeçalho e Navegação */
 header {
     background-color: var(--background-dark);

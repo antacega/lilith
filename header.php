@@ -1,3 +1,12 @@
+<?php
+/**
+ * The header for the theme.
+ *
+ * This is the template that displays all of the <head> section and everything up until <main>.
+ *
+ * @package PapiNexus
+ */
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>

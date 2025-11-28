@@ -1,3 +1,10 @@
+/**
+ * Footer Styles.
+ *
+ * This file defines the styles for the site footer, including background color,
+ * typography, spacing, and the top border separator.
+ */
+
 /* Rodapé */
 footer {
     background-color: var(--background-dark);

@@ -1,3 +1,11 @@
+/**
+ * Global CSS Variables.
+ *
+ * This file defines the custom properties (variables) used throughout the theme.
+ * It establishes the color palette (Primary, Secondary, Accent, Backgrounds) and
+ * text colors ensuring consistency across the design.
+ */
+
 /* Variáveis de Cores (Paleta de Papi e Lilith) */
 :root {
     --primary-color: #6a0dad; /* Um roxo profundo, evocando sabedoria e realeza */
