@@ -1,3 +1,12 @@
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the <main> tag and all content after.
+ *
+ * @package PapiNexus
+ */
+?>
 
     </main> <?php // <!-- closing the main tag opened in header.php --> ?>
     <footer>

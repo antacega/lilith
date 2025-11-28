@@ -1,3 +1,11 @@
+/**
+ * Reusable Components and Grid Systems.
+ *
+ * This file defines shared UI components such as service grids, cards,
+ * 2-column layouts, and list items used across various pages (Portfolio, Courses, etc.).
+ * It ensures consistent spacing, shadows, and hover effects for these elements.
+ */
+
 /* Grid de Serviços/Features */
 .services-grid, .grid-2-columns, .grid-3-columns, .guide-grid {
     display: grid;

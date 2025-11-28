@@ -1,5 +1,22 @@
 <?php
+/**
+ * Papi's Nexus Theme Functions
+ *
+ * This file handles the enqueueing of scripts and styles for the theme.
+ *
+ * @package PapiNexus
+ */
 
+/**
+ * Enqueues the main stylesheet and all modular CSS partials.
+ *
+ * This function registers the primary 'style.css' and iterates through
+ * a predefined list of CSS partials (e.g., base, components, hero) to
+ * load them as individual stylesheets. This maintains the modular structure
+ * on the frontend.
+ *
+ * @return void
+ */
 function papi_nexus_enqueue_styles() {
 
     // Register and Enqueue Main Stylesheet
@@ -29,6 +46,14 @@ function papi_nexus_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'papi_nexus_enqueue_styles' );
 
+/**
+ * Enqueues the main JavaScript file for theme interactivity.
+ *
+ * Loads 'script.js' in the footer to ensure the DOM is fully loaded before execution.
+ * Handles functionality such as smooth scrolling, mobile menu toggling, and form validation.
+ *
+ * @return void
+ */
 function papi_nexus_enqueue_scripts() {
     // Enqueue the main javascript file
     wp_enqueue_script(

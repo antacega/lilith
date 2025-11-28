@@ -1,3 +1,11 @@
+/**
+ * Responsive Styles.
+ *
+ * This file contains Media Queries to adjust the layout for different screen sizes (Tablets, Mobile).
+ * It handles the mobile menu drawer behavior, font size adjustments, and grid layout collapsing
+ * for smaller screens.
+ */
+
 /* Responsividade Básica */
 @media (max-width: 768px) {
     .menu-toggle {

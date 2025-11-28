@@ -1,3 +1,11 @@
+/**
+ * Section and General Component Styles.
+ *
+ * This file handles general section padding and background colors (light/dark themes).
+ * It also defines the global styling for headings (h1-h3), paragraphs, and
+ * Action buttons (primary and secondary CTAs).
+ */
+
 /* Seções Gerais */
 section {
     padding: 80px 0;
