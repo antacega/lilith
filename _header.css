@@ -1,96 +1,81 @@
-/* Cabeçalho e Navegação */
-header {
-    background-color: var(--background-dark);
-    padding: 15px 0;
-    border-bottom: 1px solid var(--border-color);
-    position: sticky;
+/* Header & Navigation */
+.main-header {
+    height: var(--header-height);
+    background: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-normal);
 }
 
-header .container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: var(--accent-color); /* Papi com um toque de energia */
-}
-
-.logo span {
-    color: var(--secondary-color); /* O brilho da Lilith */
-}
-
-.nav-menu ul {
-    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color-heading);
+    font-family: var(--font-family-mono);
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.nav-menu ul li {
-    margin-left: 30px;
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.nav-menu ul li a {
-    font-weight: 500;
-    font-size: 1.1em;
-    color: var(--text-color-light);
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
-.nav-menu ul li a:hover {
+.nav-link {
+    color: var(--text-color-main);
+    font-size: 0.9rem;
+    font-family: var(--font-family-mono);
+}
+
+.nav-link:hover {
     color: var(--accent-color);
 }
 
-/* Mobile Menu Toggle */
-.menu-toggle {
-    display: none; /* Escondido por padrão em desktop */
+.nav-link i {
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+
+.btn-contact {
+    padding: 8px 16px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    color: var(--accent-color);
+    font-family: var(--font-family-mono);
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.btn-contact:hover {
+    background: rgba(100, 255, 218, 0.1);
+}
+
+.mobile-menu-toggle {
+    display: none;
     background: none;
     border: none;
+    color: var(--accent-color);
+    font-size: 1.5rem;
     cursor: pointer;
-    padding: 10px;
-    z-index: 1100; /* Acima do menu */
-}
-
-.hamburger {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-color-light);
-    position: relative;
-    transition: background-color 0.3s ease;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-color-light);
-    position: absolute;
-    transition: transform 0.3s ease, top 0.3s ease;
-}
-
-.hamburger::before {
-    top: -8px;
-}
-
-.hamburger::after {
-    top: 8px;
-}
-
-.menu-toggle.active .hamburger {
-    background-color: transparent;
-}
-
-.menu-toggle.active .hamburger::before {
-    transform: rotate(45deg);
-    top: 0;
-}
-
-.menu-toggle.active .hamburger::after {
-    transform: rotate(-45deg);
-    top: 0;
 }

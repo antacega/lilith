@@ -1,14 +1,35 @@
-/* Variáveis de Cores (Paleta de Papi e Lilith) */
+/* Design System - Navy Blue Tech Theme */
 :root {
-    --primary-color: #6a0dad; /* Um roxo profundo, evocando sabedoria e realeza */
-    --secondary-color: #bb86fc; /* Um roxo mais claro, para destaques */
-    --accent-color: #03dac6; /* Um verde-azulado vibrante, para energia e tecnologia */
-    --text-color-light: #e0e0e0; /* Texto claro para fundos escuros */
-    --text-color-dark: #1f1f1f; /* Texto escuro para fundos claros */
-    --background-dark: #121212; /* Fundo escuro principal */
-    --background-light: #1e1e1e; /* Fundo secundário escuro, para seções */
-    --border-color: #333333; /* Cor da borda sutil */
-    --card-background: #2a2a2a; /* Fundo para cards e elementos agrupados */
-    --button-hover-dark: #5a009c; /* Hover para botões primários */
-    --button-hover-light: #9a66d5; /* Hover para botões secundários */
+    /* Color Palette - Navy Blue & Tech Accents */
+    --primary-color: #0a192f; /* Deep Navy - Main Background */
+    --secondary-color: #112240; /* Light Navy - Sections/Cards */
+    --accent-color: #64ffda; /* Teal/Cyan - Highlights & Tech feel */
+    --accent-color-hover: #4cdbc0;
+
+    --text-color-main: #ccd6f6; /* Off-white for main text */
+    --text-color-heading: #e6f1ff; /* White for headings */
+    --text-color-muted: #8892b0; /* Muted blue-grey */
+
+    --background-overlay: rgba(10, 25, 47, 0.93); /* High opacity overlay for readability over bg image */
+
+    --border-color: #233554;
+    --input-bg: #112240;
+
+    --success-color: #00fa9a;
+    --error-color: #ff6b6b;
+
+    /* Fonts */
+    --font-family-main: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-family-mono: 'Fira Code', 'Courier New', monospace;
+
+    /* Spacing & Layout */
+    --spacing-unit: 8px;
+    --container-width: 1200px;
+    --header-height: 80px;
+
+    /* Shadows & Effects */
+    --shadow-card: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    --shadow-hover: 0 20px 30px -15px rgba(2, 12, 27, 0.9);
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
 }
