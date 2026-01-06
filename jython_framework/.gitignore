@@ -1,0 +1,13 @@
+# Ignore compiled Java/Jython files
+*.class
+*$py.class
+
+# Ignore PyCache
+__pycache__/
+*.pyc
+
+# Ignore configuration with secrets (optional, but good practice if user edits it)
+# src/config.py
+
+# Ignore downloaded binaries
+bin/*.jar
